@@ -13,7 +13,8 @@ button {
 }
 .new-furniture {
   font-family: "Noto Sans KR", "맑은고딕", sans-serif;
-  margin: 150px 20px;
+  margin: 150px auto;
+  max-width: 1400px;
 }
 .new-furniture .section-header {
   text-align: center;
