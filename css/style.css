@@ -1,5 +1,18 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
+/* event */
+.event{
+    text-align: center;
+}
+.event-list{
+    display: flex;
+    gap:24px;
+    margin: 0 24px;
+}
+.event-list li{
+    text-align: left;
+}
+/* /event */
+/* new */
 .notosanskr * {
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -69,7 +82,8 @@ button {
 .img-branch {
   grid-area: e;
 }
-
+/* /new */
+/* product-img */
 .wrapper {
   width: 1400px;
   margin: 130px auto;
@@ -139,3 +153,4 @@ button {
   margin-top: 100px;
   /* object-fit: cover; */
 }
+/* /product */
