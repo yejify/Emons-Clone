@@ -1,4 +1,10 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* header */
+/* /header */
+.carousel-inner > .carousel-item > img {
+    width: 1309px;
+  height: 528px;
+  }
 /* event */
 .event{
     text-align: center;
