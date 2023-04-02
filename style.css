@@ -1,0 +1,48 @@
+/* review section */
+.section-review {
+    background-color: #f3f4f6;
+    width: auto;
+    height: auto;
+    padding: 30px;
+    font-family: 'Noto Sans KR', '맑은고딕', sans-serif;
+}
+
+.section-review h2 {
+    text-align: center;
+}
+
+/* review card */
+.review-card {
+    width: 320px;
+    height: auto;
+    background-color: #fff;
+}
+
+/* review-card a */
+
+.review-card-detail {
+    text-decoration: none;
+    color: inherit;
+}
+
+.review-card-detail:hover {
+    color: inherit;
+}
+
+.review-card-prod-img {
+    width: 80px;
+    height: 80px;
+}
+
+.review-card-text {
+    height: 50px;
+}
+
+/* review card product */
+.fw-bold {
+    font-size: 13px;
+}
+
+/* /review card */
+
+/* /review section */
