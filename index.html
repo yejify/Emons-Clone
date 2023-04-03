@@ -9,20 +9,20 @@
 </head>
 <body>
     <header>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-      <script>
-        $('.carousel').carousel({
-          interval: 1500 
-        })
-      </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"></script>
+        <script>
+          $('.carousel').carousel({
+            interval: 1500 
+          })
+        </script>
         <div class="container-fluid d-flex">
           <a href="https://www.emons.co.kr/index.php"><img src="img/logo.svg" alt="" class="m-4" style="max-width: 130px;"></a>
         </div>
@@ -119,7 +119,7 @@
         </div>
     </header>
   <main>
-        <!-- event -->
+<!-- event -->
         <section class="event">
           <h2>놓칠 수 없는 이야기</h2>
           <ul class="event-list">
@@ -140,8 +140,8 @@
             </li>
           </ul>
         </section>
-        <!-- /event -->
-    <!-- new -->
+<!-- /event -->
+<!-- new -->
     <section class="new-furniture">
       <h2 class="section-header">요즘 감성 요즘 가구</h2>
       <ul class="btn-list">
@@ -170,8 +170,356 @@
         </div>
       </div>
     </section>
-    <!-- /new -->
-    <!-- product -->
+<!-- /new -->
+<!-- 에몬스로 달라진 일상 섹션-->
+    <section class="section-review">
+        <h2 class="fw-bold mb-3">에몬스로 달라진 일상</h2>
+        <div class="wrap-review-card d-flex">
+            <button class="btn btn-previous shadow-none"></button>
+            <!-- 리뷰 카드 1 -->
+            <article class="review-card p-3 m-3 flex-shrink-0">
+                <!-- 사진 리뷰 -->
+                <div class="review-card-body p-0">
+                    <a href="https://www.emons.co.kr/community/myhome_boast/myboast_view.php?num=3582search_notice_yn=N&page=1"
+                        class="review-card-detail">
+                        <img src="./images/review1.jpeg" class="w-100 rounded" alt="...">
+                        <div class="review-card-txtbox pt-4 px-2">
+                            <h3 class="review-card-title fw-bold fs-6">10살 언니방을 소개해요^^</h3>
+                            <p class="review-card-text">초등학교 처음 책상으로 사서 청소년까지 쓸 수 있어서 정말 강력추천 하고 싶네요^^</p>
+                            <span>kye***************</span>
+                        </div>
+                    </a>
+                    <hr class="review-hr">
+                    <!-- 사진 리뷰에 해당하는 제품 -->
+                    <div class="review-card-prod d-flex">
+                        <!-- 리뷰 제품 상세 페이지 -->
+                        <a href="https://www.emons.co.kr/product/product_view.php?prodId=10130"><img
+                                src="./images/review-product1.jpeg" class="review-card-prod-img me-3" alt=""></a>
+                        <!-- /리뷰 제품 상세 페이지 -->
+                        <div class="review-card-prod-txtbox flex-column w-100">
+                            <!-- 좋아요 버튼 누르면 모달창 열림 -->
+                            <button class="btn-like float-end mb-2" data-bs-toggle="modal" data-bs-target="#like-modal"
+                                type="button">
+                                <img src="./images/heart-thin-outline.svg" alt="like">
+                            </button>
+                            <!-- 모달창 -->
+                            <div class="modal fade" id="like-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0 pb-0">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">www.emons.co.kr 내용:
+                                            </h1>
+                                        </div>
+                                        <div class="modal-body border-0">
+                                            로그인 후 관심상품 등록이 가능합니다.
+                                        </div>
+                                        <div class="modal-footer border-0">
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-dismiss="modal">확인</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /모달창 -->
+                            <!-- /좋아요 버튼 누르면 모달창 열림-->
+                            <p class=" review-prod-name fw-bold mb-0">레이어드 책상세트[1400 / 내츄럴]</p>
+                            <p class="review-prod-price mb-0">969,000원</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- /리뷰 카드 1 -->
+            <!-- 리뷰 카드 2 -->
+            <article class="review-card p-3 m-3 flex-shrink-0">
+                <!-- 사진 리뷰 -->
+                <div class="review-card-body p-0">
+                    <a href="https://www.emons.co.kr/community/myhome_boast/myboast_view.php?num=3582search_notice_yn=N&page=1"
+                        class="review-card-detail">
+                        <img src="./images/review2.jpeg" class="w-100 rounded" alt="...">
+                        <div class="review-card-txtbox pt-4 px-2">
+                            <h3 class="review-card-title fw-bold fs-6">제일 오랫동안 고민하고 결정한 식탁.</h3>
+                            <p class="review-card-text">신제품 솔리데식탁으로 결정했는데 최고의 선택이었던 것 같아요..</p>
+                            <span>sky****</span>
+                        </div>
+                    </a>
+                    <hr class="review-hr">
+                    <!-- 사진 리뷰에 해당하는 제품 -->
+                    <div class="review-card-prod d-flex">
+                        <!-- 리뷰 제품 상세 페이지 -->
+                        <a href="https://www.emons.co.kr/product/product_view.php?prodId=10188"><img
+                                src="./images/review-product2.jpeg" class="review-card-prod-img me-3" alt=""></a>
+                        <!-- /리뷰 제품 상세 페이지 -->
+                        <div class="review-card-prod-txtbox flex-column w-100">
+                            <!-- 좋아요 버튼 누르면 모달창 열림-->
+                            <button class="btn-like float-end mb-2" data-bs-toggle="modal" data-bs-target="#like-modal"
+                                type="button">
+                                <img src="./images/heart-thin-outline.svg" alt="like">
+                            </button>
+                            <div class="modal fade" id="like-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0 pb-0">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">www.emons.co.kr 내용:
+                                            </h1>
+                                        </div>
+                                        <div class="modal-body border-0">
+                                            로그인 후 관심상품 등록이 가능합니다.
+                                        </div>
+                                        <div class="modal-footer border-0">
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-dismiss="modal">확인</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /모달창 -->
+                            <!-- /좋아요 버튼 누르면 모달창 열림-->
+                            <p class="review-prod-name text-truncate fw-bold mb-0">솔리데 4인 식탁 세트 [L그레이 / 의자4개]</p>
+                            <p class="review-prod-price mb-0">1,320,000원</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- /리뷰 카드 2 -->
+            <!-- 리뷰 카드 3 -->
+            <article class="review-card p-3 m-3 flex-shrink-0">
+                <!-- 사진 리뷰 -->
+                <div class="review-card-body p-0">
+                    <a href="https://www.emons.co.kr/community/myhome_boast/myboast_view.php?num=3284search_field=subject&search_keyword=%EC%9D%B4%EB%9E%98%EC%84%9C&search_notice_yn=N&page=1"
+                        class="review-card-detail">
+                        <img src="./images/review3.jpeg" class="w-100 rounded" alt="...">
+                        <div class="review-card-txtbox pt-4 px-2">
+                            <h3 class="review-card-title fw-bold fs-6">이래서 에몬스 에몬스 하나봐요!</h3>
+                            <p class="review-card-text overflow-hidden">식탁은 다른가구점에서 사려고 생각했던 식탁이 있었는데. 이 식탁 보는
+                                순간.....
+                                이거다!! 두번의 외침이
+                                시작되었어요.
+                            </p>
+                            <span>ejm**************</span>
+                        </div>
+                    </a>
+                    <hr class="review-hr">
+                    <!-- 사진 리뷰에 해당하는 제품 -->
+                    <div class="review-card-prod d-flex">
+                        <!-- 리뷰 제품 상세 페이지 -->
+                        <a href="https://www.emons.co.kr/product/product_view.php?prodId=8941"><img
+                                src="./images/review-product3.jpeg" class="review-card-prod-img me-3" alt=""></a>
+                        <!-- /리뷰 제품 상세 페이지 -->
+                        <div class="review-card-prod-txtbox flex-column w-100">
+                            <!-- 좋아요 버튼 누르면 모달창 열림-->
+                            <button class="btn-like float-end mb-2" data-bs-toggle="modal" data-bs-target="#like-modal"
+                                type="button">
+                                <img src="./images/heart-thin-outline.svg" alt="like">
+                            </button>
+                            <!-- 모달창 -->
+                            <div class="modal fade" id="like-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0 pb-0">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">www.emons.co.kr 내용:
+                                            </h1>
+                                        </div>
+                                        <div class="modal-body border-0">
+                                            로그인 후 관심상품 등록이 가능합니다.
+                                        </div>
+                                        <div class="modal-footer border-0">
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-dismiss="modal">확인</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /모달창 -->
+                            <!-- /좋아요 버튼 누르면 모달창 열림-->
+                            <p class="review-prod-name text-truncate fw-bold mb-0">헬렌20 식탁 세트 [6인 / 벤치형 / D그레이]</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- /리뷰 카드 3 -->
+            <!-- 리뷰 카드 4 -->
+            <article class="review-card p-3 m-3 flex-shrink-0">
+                <!-- 사진 리뷰 -->
+                <div class="review-card-body p-0">
+                    <a href="https://www.emons.co.kr/community/myhome_boast/myboast_view.php?num=3525search_notice_yn=N&page=1"
+                        class="review-card-detail">
+                        <img src="./images/review4.jpeg" class="w-100 rounded" alt="...">
+                        <div class="review-card-txtbox pt-4 px-2">
+                            <h3 class="review-card-title fw-bold fs-6 text-truncate">에몬스 덕분에 따뜻해진 저희 집에
+                                놀러오신 것을 환영합니다^^
+                            </h3>
+                            <p class="review-card-text">저희 집을 화사하게, 따뜻하게 만들어준 에몬스 루치아노 3인용 소파 예요~
+                            </p>
+                            <span>abr****</span>
+                        </div>
+                    </a>
+                    <hr class="review-hr">
+                    <!-- 사진 리뷰에 해당하는 제품 -->
+                    <div class="review-card-prod d-flex">
+                        <!-- 리뷰 제품 상세 페이지 -->
+                        <a href="https://www.emons.co.kr/product/product_view.php?prodId=8077"><img
+                                src="./images/review-product4.jpeg" class="review-card-prod-img me-3" alt=""></a>
+                        <!-- /리뷰 제품 상세 페이지 -->
+                        <div class="review-card-prod-txtbox flex-column w-100">
+                            <!-- 좋아요 버튼 누르면 모달창 열림-->
+                            <button class="btn-like float-end mb-2" data-bs-toggle="modal" data-bs-target="#like-modal"
+                                type="button">
+                                <img src="./images/heart-thin-outline.svg" alt="like">
+                            </button>
+                            <!-- 모달창 -->
+                            <div class="modal fade" id="like-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0 pb-0">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">www.emons.co.kr 내용:
+                                            </h1>
+                                        </div>
+                                        <div class="modal-body border-0">
+                                            로그인 후 관심상품 등록이 가능합니다.
+                                        </div>
+                                        <div class="modal-footer border-0">
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-dismiss="modal">확인</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /모달창 -->
+                            <!-- /좋아요 버튼 누르면 모달창 열림-->
+                            <p class="review-prod-name fw-bold mb-0">루치아노 소파 [3인]</p>
+                            <p class="review-prod-price mb-0">2,740,000원</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- /리뷰 카드 4 -->
+            <!-- 리뷰 카드 5 -->
+            <article class="review-card card-hidden p-3 m-3 flex-shrink-0">
+                <!-- 사진 리뷰 -->
+                <div class="review-card-body p-0">
+                    <a href="https://www.emons.co.kr/community/myhome_boast/myboast_view.php?num=3605search_notice_yn=A&page=1"
+                        class="review-card-detail">
+                        <img src="./images/review5.jpeg" class="w-100 rounded" alt="...">
+                        <div class="review-card-txtbox pt-4 px-2">
+                            <h3 class="review-card-title fw-bold fs-6">이번엔 저의 신혼집에 에몬스를 들였어요.</h3>
+                            <p class="review-card-text overflow-hidden">쇼파는 다양하게 배치 가능해서 너무좋고, 무엇보다 침대처럼 넓어서 침대로도
+                                쓸수있어요.
+                                tv보다가 소파에서
+                                잠드는날도
+                                많네요.^^
+                            </p>
+                            <span>hap********************</span>
+                        </div>
+                    </a>
+                    <hr class="review-hr">
+                    <!-- 사진 리뷰에 해당하는 제품 -->
+                    <div class="review-card-prod d-flex">
+                        <!-- 리뷰 제품 상세 페이지 -->
+                        <a href="https://www.emons.co.kr/product/product_view.php?prodId=10095"><img
+                                src="./images/review-product5.jpeg" class="review-card-prod-img me-3" alt=""></a>
+                        <!-- /리뷰 제품 상세 페이지 -->
+                        <div class="review-card-prod-txtbox flex-column w-100">
+                            <!-- 좋아요 버튼 누르면 모달창 열림-->
+                            <button class="btn-like float-end mb-2" data-bs-toggle="modal" data-bs-target="#like-modal"
+                                type="button">
+                                <img src="./images/heart-thin-outline.svg" alt="like">
+                            </button>
+                            <!-- 모달창 -->
+                            <div class="modal fade" id="like-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0 pb-0">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">www.emons.co.kr 내용:
+                                            </h1>
+                                        </div>
+                                        <div class="modal-body border-0">
+                                            로그인 후 관심상품 등록이 가능합니다.
+                                        </div>
+                                        <div class="modal-footer border-0">
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-dismiss="modal">확인</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /모달창 -->
+                            <!-- /좋아요 버튼 누르면 모달창 열림-->
+                            <p class="review-prod-name text-truncate fw-bold mb-0">위브릭 듀얼 스윙 패브릭 4인 소파 스툴 세트 [아이보리]</p>
+                            <p class="review-prod-price mb-0">2,050,000원</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- /리뷰 카드 5 -->
+            <!-- 리뷰 카드 6 -->
+            <article class="review-card card-hidden p-3 m-3 flex-shrink-0">
+                <!-- 사진 리뷰 -->
+                <div class="review-card-body p-0">
+                    <a href="https://www.emons.co.kr/community/myhome_boast/myboast_view.php?num=3526search_field=subject&search_keyword=20%EB%85%84&search_notice_yn=A&page=1"
+                        class="review-card-detail">
+                        <img src="./images/review6.jpeg" class="w-100 rounded" alt="...">
+                        <div class="review-card-txtbox pt-4 px-2">
+                            <h3 class="review-card-title fw-bold fs-6 text-truncate">루이나 옷장은 자신을 알아봐달라며 반짝반짝 빛나고 있었고
+                                저희는
+                                보자마자 첫눈에
+                                반해버렸습니다.
+                            </h3>
+                            <p class="review-card-text">루이나 옷장이 집으로 처음 온 날, 다시 한 번 더 그 매력에 사로잡혔습니다.
+                            </p>
+                            <span>pmj***************</span>
+                        </div>
+                    </a>
+                    <hr class="review-hr">
+                    <!-- 사진 리뷰에 해당하는 제품 -->
+                    <div class="review-card-prod d-flex">
+                        <!-- 리뷰 제품 상세 페이지 -->
+                        <a href="https://www.emons.co.kr/product/product_view.php?prodId=8196"><img
+                                src="./images/review-product6.jpeg" class="review-card-prod-img me-3" alt=""></a>
+                        <!-- /리뷰 제품 상세 페이지 -->
+                        <div class="review-card-prod-txtbox flex-column w-100">
+                            <!-- 좋아요 버튼 누르면 모달창 열림-->
+                            <button class="btn-like float-end mb-2" data-bs-toggle="modal" data-bs-target="#like-modal"
+                                type="button">
+                                <img src="./images/heart-thin-outline.svg" alt="like">
+                            </button>
+                            <!-- 모달창 -->
+                            <div class="modal fade" id="like-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0 pb-0">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">www.emons.co.kr 내용:
+                                            </h1>
+                                        </div>
+                                        <div class="modal-body border-0">
+                                            로그인 후 관심상품 등록이 가능합니다.
+                                        </div>
+                                        <div class="modal-footer border-0">
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-dismiss="modal">확인</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /모달창 -->
+                            <!-- /좋아요 버튼 누르면 모달창 열림-->
+                            <p class="review-prod-name text-truncate fw-bold mb-0">루이나 붙박이장 6문 [10.5형 / 이동형]</p>
+                            <p class="review-prod-price mb-0">1,950,000원</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- /리뷰 카드 6 -->
+            <button class="btn btn-next shadow-none"></button>
+        </div>
+    </section>
+<!-- /에몬스로 달라진 일상 섹션-->
+<!-- product -->
     <section>
       <div class="wrapper">
         <h3 class="section-header">
@@ -197,7 +545,6 @@
             <a href=""><img src="./img/product_desk2.jpeg" alt=""></a>
           </div>
         </div>
-
         <div class="sns-img">
           <a href="#" class="insta"></a>
           <a href="#" class="youtube"></a>
@@ -211,9 +558,8 @@
         </div>
       </div>
     </section>
-    <!-- /product -->
+<!-- /product -->
   </main>
   <footer></footer>
 </body>
-
 </html>
