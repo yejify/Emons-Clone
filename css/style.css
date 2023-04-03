@@ -106,6 +106,121 @@ button {
   grid-area: e;
 }
 /* /new */
+/* video */
+h2,
+p {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.swiper-thumb {
+  width: 1400px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+}
+
+.wrap > .wrap-text {
+  margin-top: 30px;
+}
+
+.wrap-text > .wrap-title {
+  font-size: 2.25rem;
+  margin-top: 10px;
+}
+
+.swiper-thumb > .play-img {
+  flex-basis: 60%;
+  flex-shrink: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.btn-wrap {
+  margin: auto 0 10px auto;
+}
+
+.wrap-fig {
+  display: flex;
+  max-height: 300px;
+  gap: 5px;
+}
+
+.wrap-fig > figure {
+  flex-basis: 33%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.wrap > figure > img {
+  max-width: 100%;
+}
+
+.wrap > .btn-wrap > #previous-btn::before {
+  content: url(./img/select.jpg);
+  transform: rotate(90deg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.wrap > .btn-wrap > #next-btn::before {
+  content: url(./img/select.jpg);
+  transform: rotate(-90deg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.wrap-fig {
+  /* transform: translateX(102%); */
+}
+
+@media (max-width: 1422px) {
+  .swiper-thumb {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .swiper-thumb {
+    width: auto;
+  }
+
+  body {
+    min-width: 375px;
+  }
+  html {
+    font-size: 13px;
+  }
+}
+
+/* /video */
 /* 에몬스로 달라진 일상 섹션 */
 .section-review {
     display: block;
