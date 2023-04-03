@@ -6,12 +6,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-      .carousel-inner > .carousel-item > img {
-        width: 1309px;
-      height: 528px;
-      }
-    </style>
 </head>
 <body>
     <header>
@@ -32,9 +26,7 @@
         <div class="container-fluid d-flex">
           <a href="https://www.emons.co.kr/index.php"><img src="img/logo.svg" alt="" class="m-4" style="max-width: 130px;"></a>
         </div>
-
         <div class="container-fluid px-0">
-     
           <!-- Navigation-->
           <nav class="navbar navbar-expand-sm navbar-light py-3" id="mainNav">
             <div class="container  px-lg-5">
@@ -51,11 +43,9 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-      
+          </nav>
         </div>
         <div id="demo" class="carousel slide " data-ride="carousel">
-
           <div class="carousel-inner ">
             <!-- 슬라이드 쇼 -->
             <div class="carousel-item active">
@@ -129,6 +119,29 @@
         </div>
     </header>
   <main>
+<!-- event -->
+        <section class="event">
+          <h2>놓칠 수 없는 이야기</h2>
+          <ul class="event-list">
+            <li>
+              <img class="rounded" src="img/event_live.jpeg" alt="라이브 방송">
+              <h3>침대 반값 찬스! 라이브 방송</h3>
+              <p>4월 3일(월) 오전 10시 30분</p>
+            </li>
+            <li>
+              <img class="rounded" src="img/event_spring.jpeg" alt="스프링 이벤트">
+              <h3>우리집 요즘공간 #요즘 에몬스</h3>
+              <p>에몬스와 함께하는 우리집, 요즘공간을 자랑하세요!</p>
+            </li>
+            <li>
+              <img class="rounded" src="img/event_drama.jpeg" alt="드라마 협찬">
+              <h3>KBS2 주말드라마 진짜가 나타났다</h3>
+              <p>에몬스가 제품(가구)협찬 합니다.</p>
+            </li>
+          </ul>
+        </section>
+<!-- /event -->
+<!-- new -->
     <section class="new-furniture">
       <h2 class="section-header">요즘 감성 요즘 가구</h2>
       <ul class="btn-list">
@@ -157,31 +170,7 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="wrapper">
-        <h3 class="section-header">
-          놀러오세요 에몬스 빌리지
-        </h3>
-        <p class="section-sub-text">
-          @emons_furniture
-        </p>
-        <div class="product-img">
-          <div>
-            <a href=""><img src="./img/product_desk.jpeg" alt=""></a>
-          </div>
-          <div>
-            <a href=""><img src="./img/product_bookshelves.jpeg" alt=""></a>
-          </div>
-          <div>
-            <a href=""><img src="./img/product_motiondesk.jpeg" alt=""></a>
-          </div>
-          <div>
-            <a href=""><img src="./img/product_bookshelves2.jpeg" alt=""></a>
-          </div>
-          <div>
-            <a href=""><img src="./img/product_desk2.jpeg" alt=""></a>
-          </div>
-        </div>
+<!-- /new -->
 <!-- 에몬스로 달라진 일상 섹션-->
     <section class="section-review">
         <h2 class="fw-bold mb-3">에몬스로 달라진 일상</h2>
@@ -529,9 +518,48 @@
             <button class="btn btn-next shadow-none"></button>
         </div>
     </section>
-    <!-- /에몬스로 달라진 일상 섹션-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+<!-- /에몬스로 달라진 일상 섹션-->
+<!-- product -->
+    <section>
+      <div class="wrapper">
+        <h3 class="section-header">
+          놀러오세요 에몬스 빌리지
+        </h3>
+        <p class="section-sub-text">
+          @emons_furniture
+        </p>
+        <div class="product-img">
+          <div>
+            <a href=""><img src="./img/product_desk.jpeg" alt=""></a>
+          </div>
+          <div>
+            <a href=""><img src="./img/product_bookshelves.jpeg" alt=""></a>
+          </div>
+          <div>
+            <a href=""><img src="./img/product_motiondesk.jpeg" alt=""></a>
+          </div>
+          <div>
+            <a href=""><img src="./img/product_bookshelves2.jpeg" alt=""></a>
+          </div>
+          <div>
+            <a href=""><img src="./img/product_desk2.jpeg" alt=""></a>
+          </div>
+        </div>
+        <div class="sns-img">
+          <a href="#" class="insta"></a>
+          <a href="#" class="youtube"></a>
+          <a href="#" class="blog"></a>
+          <a href="#" class="facebook"></a>
+          <a href="#" class="naver"></a>
+        </div>
+        <div class=" bottom-banner product-img">
+          <a href="#"><img src="./img/findAgent_banner.jpeg" alt=""></a>
+          <a href="#"><img src="./img/vrshowroom_banner.jpeg" alt=""></a>
+        </div>
+      </div>
+    </section>
+<!-- /product -->
+  </main>
+  <footer></footer>
 </body>
 </html>
